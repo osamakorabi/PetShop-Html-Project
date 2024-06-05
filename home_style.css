@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)),url(Images/Home/paws.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    font-size: 22px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 80px;
+    width: 250px !important;
+    height: auto !important;
+    cursor: pointer;
+}
+.navbarText{
+    margin: 0px 50px 120px 0px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    -webkit-text-stroke: 0.25px black;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #619e28;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size:  50px;
+    margin-top: 80px;
+    text-shadow: 0 0 5px black;
+    -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.5);
+}
+.content p{
+    font-size:  30px;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    text-shadow: 0 0 5px black;
+    -webkit-text-stroke: 0.2px rgba(0, 0, 0, 0.5);
+}
+
+.card{
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    float: left;
+    text-align: center;
+    padding-top: 200px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.card1{
+    background-image: url(Images/Home/caticon.jpg);
+}
+.card2{
+    background-image: url(Images/Home/dogicon.jpg);
+}
+.card3{
+    background-image: url(Images/Home/sellicon.webp);
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+h2{
+    color: rgb(74, 188, 51);
+    text-shadow: 0 0 5px black;
+    -webkit-text-stroke: 0.6px rgba(0, 0, 0, 0.5);
+    
+}

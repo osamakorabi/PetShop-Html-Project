@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="contact_style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="home.html">
+                <div>
+                    <img src="Images/Home/Pet Shop AO.png" class="logo">
+                </div>
+            </a>
+            <div class="navbarText">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="Login.php">Login</a></li>
+                    <li><a href="Signup.php">Signup</a></li>
+                    <li><a href="Logout.php">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <form class="form-container" action="https://formspree.io/f/xgegjryq" method="POST">
+            <div class="form">
+                <span class="heading">Get in touch</span>
+                <input placeholder="Name" id="name" name="name" type="text" class="input" required>
+                <input placeholder="Email" id="email" name="email" type="email" class="input" required>
+                <textarea placeholder="Give your feedback" rows="10" cols="30" id="message" name="message" class="textarea" required></textarea>
+                <div class="button-container">
+                    <button type="submit" class="send-button">Send</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

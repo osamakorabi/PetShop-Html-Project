@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="give_style.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="home.html">
+                <div>
+                    <img src="Images/Home/Pet Shop AO.png" class="logo">
+                </div>
+            </a>
+            <div class="navbarText">
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="Login.php">login</a></li>
+                    <li><a href="Signup.php">signup</a></li>
+                    <li><a href="Login.php">logout</a></li>    
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="form_area">
+                <p class="title">GIVE AWAY PET</p>
+                <form action="givemessage.html" method="post" enctype="multipart/form-data">
+                    <div class="form_group">
+                        <label class="sub_title" for="name">Name</label>
+                        <input placeholder="Enter your full name" class="form_style" type="text" name="name" required>
+                    </div>
+                    <div class="form_group">
+                        <label class="sub_title" for="email">Email</label>
+                        <input placeholder="Enter your email" id="email" class="form_style" type="email" name="email" required>
+                    </div>
+                    <div class="form_group">
+                        <label class="sub_title" for="location">Location</label>
+                        <input placeholder="Enter your location" id="location" class="form_style" type="text" name="location" required>
+                    </div>
+                    <div class="form_group">
+                        <label class="sub_title" for="pet_type">Pet Type</label>
+                        <select id="pet_type" class="form_style" name="pet_type" required>
+                            <option value="" disabled selected>Select Pet Type</option>
+                            <option value="Cat">Cat</option>
+                            <option value="Dog">Dog</option>
+                        </select>
+                    </div>
+                    <div class="form_group">
+                        <label class="sub_title" for="image">Upload Pet Image</label>
+                        <input id="image" class="form_style" type="file" accept="image/*" name="image" required>
+                    </div>
+                    <div>
+                        <button class="btn" type="submit">GIVE PET</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
